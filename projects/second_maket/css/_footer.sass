@@ -1,0 +1,214 @@
+.subscribe
+  background: url("../img/subscribe.jpg") no-repeat center
+  height: 438px
+  box-sizing: border-box
+.subscribe-op
+  margin: 0 auto
+  background: rgba(242, 242, 242, 0.5) center
+  height: 438px
+  width: 1600px
+.subscribe-box
+  display: flex
+  justify-content: space-between
+  .box-left
+    width: 569px
+    border-right: solid 1px #e3e3e3
+    height: 438px
+    padding-right: 10px
+    padding-top: 6px
+    img
+      float: left
+      margin-right: 28px
+
+    p
+      color: rgba(34, 34, 36, 0.67)
+      font-size: 16px
+      line-height: 26px
+      font-style: italic
+      margin-bottom: 0
+      letter-spacing: 0.3px
+    h5
+      margin-top: 14px
+      color: $red
+      font-size: 16px
+      font-weight: 700
+      margin-left: 113px
+      margin-bottom: -8px
+
+    span
+      color: #222224
+      font-size: 12px
+      font-weight: 300
+      margin-left: 113px
+      margin-top: 0
+
+  .box-right
+    width: 700px
+    .text
+      text-align: center
+      width: 277px
+      margin-left: 202px
+      margin-top: 138px
+    .sub-text
+      display: block
+      align-self: center
+      color: rgba(34, 34, 36, 0.67)
+      font-size: 24px
+      font-weight: 400
+      text-transform: uppercase
+      letter-spacing: 0.5px
+      .sub-text2
+        display: block
+        color: rgba(34, 34, 36, 0.67)
+        font-size: 14px
+        font-weight: 400
+        text-align: center
+        margin-bottom: 32px
+        margin-top: 1px
+        letter-spacing: 0.1px
+
+  .sub-form
+    display: flex
+    align-items: center
+    margin-left: 58px
+
+  .sub-search
+    height: 45px
+    width: 334px
+    margin-left: 92px
+    box-sizing: border-box
+    padding: 18px 78px 18px 28px
+    border-bottom-left-radius: 23px
+    border-top-left-radius: 23px
+    &:focus
+      outline: none
+
+  .sub-submit
+    height: 46px
+    padding-left: 20px
+    padding-right: 20px
+    box-sizing: border-box
+    margin-left: -52px
+    background-color: $red
+    border-top-right-radius: 23px
+    border-bottom-right-radius: 23px
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    text-align: center
+    cursor: pointer
+    transition: color 0.7s
+    &:focus
+      outline: none
+    &:hover
+      color: #222222
+#footer-carousel
+  margin-top: 111px
+  position: relative
+  .carousel-indicators
+    position: absolute
+    top: 160px
+    left: -104px
+    li
+      background: #d6d6d6
+
+    .active
+      background-color: $red
+
+    .slide-boo
+      display: block
+      width: 38px
+      height: 4px
+      margin-right: 14px
+.footer-menu
+  height: 428px
+  margin-top: 109px
+.footer-menu-top
+  display: flex
+  .navigation
+    margin-top: 14px
+    width: 713px
+    display: flex
+    justify-content: space-around
+    padding-left: 11px
+.footer-menu-left
+  width: 427px
+  padding-right: 11px
+  box-sizing: border-box
+  .logo
+    margin-top: 0
+
+  p
+    -webkit-margin-before: 0
+    color: #898989
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    margin-top: 29px
+.f_nav_head
+  color: $red
+  font-size: 18px
+  font-weight: 700
+  margin-bottom: 32px
+  line-height: 14px
+  letter-spacing: 0.6px
+.footer-nav
+  font-size: 16px
+  font-weight: 400
+  line-height: 42px
+  margin-bottom: 79px
+  &-1
+    padding-left: 10px
+  &-2
+    padding-left: 60px
+  li
+    list-style: none
+  li a
+    text-decoration: none
+    color: #898989
+    transition: text-shadow 0.5s
+    &:hover
+      color: #222222
+      text-shadow: 1px 1px 2px #898989
+      border-bottom: 1px solid #222222
+    &:active
+      color: white
+      text-shadow: 1px 1px 2px #222222
+.footer-menu-bot
+  background: #e6e6e6
+  .box
+    height: 79px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  p
+    color: #7a7a7a
+    font-size: 16px
+    font-weight: 400
+    margin-bottom: 0
+.social
+  display: flex
+  .icon
+    width: 32px
+    height: 32px
+    background: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-right: 6px
+    text-decoration: none
+    color: #b2b2b2
+    font-size: 16px
+    font-weight: 400
+    line-height: 42px
+    transition: background-color 0.5s
+
+  a:hover
+    background: $red
+    color: #fff
+
+  a:active
+    box-shadow: 0 0 2px 2px #222222
+  .icon-unactive
+    filter: opacity(40%)

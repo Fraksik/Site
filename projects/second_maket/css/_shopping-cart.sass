@@ -1,0 +1,216 @@
+.cart-table
+  margin-top: 80px
+  margin-bottom: 35px
+.cart-table-list
+  border-top: none
+  tbody th:first-child
+    max-width: 300px
+    a:hover
+      text-decoration: none
+      .cart-table__name
+        color: $red
+      img
+        box-shadow: 0 0 2px 2px #222222
+    img
+      float: left
+      margin-right: 21px
+      transition: box-shadow 0.7s
+    .cart-table__name
+      color: #222222
+      font-size: 13px
+      font-weight: 400
+      text-transform: uppercase
+      margin-bottom: 33px
+      margin-top: 10px
+      transition: color 0.5s
+    .color-size-table
+      color: #575757
+      font-size: 13px
+      font-weight: 400
+    .type-table-size-color
+      color:  #6f6e6e
+      font-size: 13px
+      font-weight: 300
+  thead th:first-child, tbody th:first-child
+      text-align: left
+  thead tr
+    th
+      color: #222222
+      font-size: 13px
+      font-weight: 700
+      text-transform: uppercase
+      border-top: none
+      border-bottom: 1px solid #eaeaea
+      padding-bottom: 20px
+      text-align: center
+  tbody
+    form input
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      width: 54px
+      height: 30px
+      text-align: center
+      outline: none
+      &[type=number]::-webkit-inner-spin-button, &[type=number]::-webkit-outer-spin-button
+        -webkit-appearance: none
+        margin: 0
+    tr:last-child
+      border-bottom: 1px solid #eaeaea
+    tr
+      height: 166px
+    td, th
+      text-align: center
+      vertical-align: middle
+    td
+      color: #656565
+      font-size: 13px
+      font-weight: 400
+      min-width: 70px
+.cart-del-table
+  display: flex
+  justify-content: center
+  align-items: center
+  a
+    text-decoration: none
+    color: #c0c0c0
+    font-size: 16px
+    font-weight: 400
+    &:hover
+      color: #222222
+
+.under-cart-buttons
+  display: flex
+  justify-content: space-between
+  margin-bottom: 58px
+.under-cart-button
+  border: 1px solid #eaeaea
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  padding-left: 35px
+  padding-right: 35px
+  color:  #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  transition: box-shadow 0.7s
+  &:hover
+    text-decoration: none
+    box-shadow: 0 0 2px 2px #222222
+    color:  #4a4a4a
+  &:active
+    background: #222222
+    color: #ffffff
+.sp-shipping
+  display: flex
+  justify-content: space-between
+  margin-bottom: 79px
+  h4
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 22px
+  &-coupon, &-address
+    width: 355px
+.shipping-input
+  border: 1px solid #eaeaea
+  width: 355px
+  height: 45px
+  margin-bottom: 20px
+  padding: 16px 30px 16px 20px
+  outline: none
+  &::-webkit-input-placeholder
+    color: #b1b1b1
+.get-a-quote
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  padding-left: 15px
+  padding-right: 15px
+  height: 35px
+  color: #4a4a4a
+  font-size: 11px
+  font-weight: 700
+  text-transform: uppercase
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  outline: none
+  transition: box-shadow 0.7s
+  &:hover
+    text-decoration: none
+    color: #4a4a4a
+    box-shadow: 0 0 2px 2px #222222
+  &:active
+    background: #222222
+    color: #ffffff
+.sc-shipping-country
+  position: relative
+  span
+    position: absolute
+    font-size: 15px
+    color: #bdbdbd
+    left: 330px
+    top: 13px
+
+  #shipping-sity
+    &::-webkit-calendar-picker-indicator
+      display: none
+
+.sp-shipping-coupon
+  .input-coupon
+    margin-top: 23px
+  span
+    color: #000000
+    font-size: 14px
+    font-weight: 300
+.sp-shipping-check
+  background-color: #f5f3f3
+  width: 360px
+  height: 214px
+  padding: 40px
+  &-top
+    border-bottom: 1px solid #eaeaea
+    display: flex
+    flex-direction: column
+    span
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: 400
+      text-align: right
+      text-transform: uppercase
+    h4
+      text-align: right
+      margin-top: 14px
+      color: #222222
+      font-size: 16px
+      font-weight: 700
+    h4 span
+      color: #f16d7f
+      font-size: 16px
+      font-weight: 700
+    width: 275px
+  &-bot
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #f16d7f
+    width: 273px
+    height: 50px
+    text-transform: uppercase
+    color: #ffffff
+    font-size: 16px
+    font-weight: 700
+    margin-top: 17px
+    transition: box-shadow 0.7s
+    &:hover
+      text-decoration: none
+      color: #ffffff
+      box-shadow: 0 0 2px 2px #222222
+    &:active
+      background: #ffffff
+      color: $red
+
+

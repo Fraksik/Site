@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="317a4f1e-58fc-4f49-830f-5da28061d004" name="My site" url="http://xn--h1aaicbjbcadgikkgdfq4eg5o.xn--p1ai/">
+        <fileTransfer host="95.213.255.238" port="21" rootFolder="/www/xn--h1aaicbjbcadgikkgdfq4eg5o.xn--p1ai">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

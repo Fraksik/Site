@@ -1,0 +1,420 @@
+.product-top
+  background: #f8f3f4
+  height: 148px
+  box-sizing: border-box
+  text-transform: uppercase
+  .box
+    box-sizing: border-box
+    display: flex
+    justify-content: space-between
+
+  h2
+    font-size: 24px
+    color: $red
+    margin-top: 65px
+
+  h4
+    font-size: 14px
+    line-height: 20px
+    margin-top: 69px
+    color: #636363
+    span
+      color: $red
+
+    a
+      text-decoration: none
+      &:visited, &:link
+        color: #636363
+
+      &:hover
+        color: #ef5b70
+.product-mid
+  display: flex
+  justify-content: space-between
+  margin-top: 59px
+  .product-bot
+    width: 846px
+    margin-top: 48px
+
+  .product-main
+    width: 846px
+.aside-menu
+  width: 243px
+  .menu1
+    summary:after
+      margin-left: 138px
+
+  .menu2
+    margin-top: 18px
+    summary:after
+      margin-left: 162px
+
+  .menu3
+    margin-top: 18px
+    summary:after
+      margin-left: 143px
+
+  details
+    li
+      list-style: none
+      margin-left: 20px
+    a
+      color: #6f6e6e
+      font-size: 14px
+      font-weight: 400
+      line-height: 33px
+      text-decoration: none
+      &:hover
+        color: $red
+
+  details summary
+    color: #838383
+    font-size: 14px
+    font-weight: 700
+    border-left: solid 5px #ef5b70
+    border-bottom: solid 1px #ebebeb
+    padding-left: 10px
+    padding-right: 6px
+    box-sizing: border-box
+    height: 37px
+    padding-top: 12px
+    outline: none
+    cursor: pointer
+
+  details[open] summary
+    color: #ef5b70
+
+  details summary::-webkit-details-marker
+    display: none
+
+  details summary:after
+    content: url("../img/arrow.png")
+    color: #838383
+    font-size: 10px
+
+  details[open] > summary:after
+    content: url("../img/arrow1.png")
+    color: #838383
+    font-size: 10px
+.top-filter
+  width: 848px
+  display: flex
+.top-filter-left
+  h5
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    -webkit-margin-before: 0
+    -webkit-margin-after: 0
+    margin-top: 12px
+
+  .filter-menu
+    width: 176px
+    height: 39px
+    padding-right: 0
+    margin-top: 14px
+    line-height: 26px
+    a
+      text-decoration: none
+      color: #6f6e6e
+      font-size: 14px
+      font-weight: 400
+      &:link, &:visited
+        color: #6f6e6e
+
+      &:hover
+        color: $red
+
+    span
+      color: #dfdfdf
+      font-size: 14px
+      font-weight: 400
+      margin-left: 10px
+      margin-right: 6px
+.top-filter-mid
+  margin-left: 112px
+  width: 238px
+  margin-right: 58px
+  h5
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    -webkit-margin-before: 0
+    -webkit-margin-after: 0
+    margin-top: 12px
+.checkbox
+  margin-top: 14px
+  .common-check
+    display: none
+
+  .checkbox-custom
+    position: relative
+    border: 1px solid #ebebeb
+    box-sizing: border-box
+    background-color: #ffffff
+    width: 13px
+    height: 13px
+    margin-right: 6px
+
+  label
+    color: #6f6e6e
+    font-size: 14px
+    line-height: 24px
+    input
+      margin-bottom: 10px
+
+    .checkbox-custom,
+    .label
+      font-family: 'Open Sans', sans-serif
+      display: inline-block
+      vertical-align: middle
+      cursor: pointer
+      font-weight: 400
+
+    .common-check:checked + .checkbox-custom::before
+      content: "\2714"
+      display: block
+      position: absolute
+      top: -7px
+      left: 0
+      border-radius: 2px
+      box-sizing: border-box
+
+  .check1
+    margin-right: 20px
+
+  .check2
+    margin-right: 27px
+
+  .check3
+    margin-right: 28px
+
+  .check5
+    margin-right: 37px
+
+  .check6
+    margin-right: 27px
+.top-filter-right
+  form
+    margin-top: 12px
+    span
+      font-family: OpenSans, sans-serif
+      color: #6f6e6e
+      font-size: 14px
+      font-weight: 400
+
+  label
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    -webkit-margin-before: 0
+    -webkit-margin-after: 0
+
+  #price
+    margin-top: 23px
+    background-color: #f0f0f0
+    width: 262px
+    height: 6px
+    margin-bottom: 17px
+    cursor: pointer
+.top-sort
+  background-color: #f3f3f3
+  width: 846px
+  height: 50px
+  margin-top: 19px
+  display: flex
+  padding: 10px 9px
+  box-sizing: border-box
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  span
+    display: block
+.sorted-by-1
+  width: 153px
+  height: 30px
+  border: 1px solid #ebebeb
+  box-sizing: border-box
+  background-color: #ffffff
+  margin-right: 10px
+  display: flex
+  &-l
+    width: 66px
+    height: 100%
+    text-transform: capitalize
+    border-right: 1px solid #e6e6e6
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &-r
+    width: 86px
+    details[open] summary
+      color: #ef5b70
+
+    details[open] > summary:after
+      content: url("../img/arrow1.png")
+      color: #838383
+      font-size: 10px
+.sorted-by-2
+  width: 119px
+  height: 30px
+  border: 1px solid #ebebeb
+  box-sizing: border-box
+  background-color: #ffffff
+  display: flex
+  &-l
+    width: 55px
+    height: 100%
+    text-transform: capitalize
+    border-right: 1px solid #e6e6e6
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &-r
+    width: 63px
+    details[open] summary
+      color: #ef5b70
+
+    details[open] > summary:after
+      content: url("../img/arrow1.png")
+      color: #838383
+      font-size: 10px
+
+    .sorting summary:after
+      margin-left: 18px
+.sorting
+  padding: 7px 9px
+  box-sizing: border-box
+  li
+    list-style: none
+    cursor: pointer
+    &:hover
+      color: $red
+
+  summary
+    box-sizing: border-box
+    outline: none
+    cursor: pointer
+    margin-top: -3px
+
+  summary::-webkit-details-marker
+    display: none
+
+  summary:after
+    content: url("../img/arrow.png")
+    color: #838383
+    font-size: 10px
+    margin-left: 21px
+    margin-bottom: 5px
+.pro-mid-bot
+  height: 44px
+  display: flex
+  justify-content: space-between
+.pagination-product
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  box-sizing: border-box
+  background-color: #ffffff
+  padding-right: 20px
+  padding-left: 20px
+  height: 44px
+  color: #c4c4c4
+  font-size: 16px
+  font-weight: 300
+  a
+    text-decoration: none
+    &:visited, &:link
+      color: #c4c4c4
+
+  .pagination-arrow-r
+    margin-left: 16px
+
+  .pagination-arrow-l
+    margin-right: 16px
+
+  .pagination-number
+    margin-right: 16px
+
+  .active-pagination-number, a:hover
+    color: #ef5b70 !important
+.pro-mid-bot-viewall
+  border-radius: 3px
+  border: 1px solid #ef5b70
+  box-sizing: border-box
+  padding-left: 45px
+  padding-right: 45px
+  height: 44px
+  color: #ef5b70
+  font-size: 16px
+  font-weight: 300
+  display: flex
+  align-items: center
+  justify-content: center
+  &:visited, &:link
+    color: #ef5b70
+  &:hover
+    box-shadow: 0 1px 2px 2px #222222
+    text-decoration: none
+
+  &:active
+    background: #ef5b70
+    color: #ffffff
+
+  span
+    display: block
+    text-decoration: none
+.footer-top
+  height: 341px
+  background: #222224
+  margin-top: 110px
+  color: #fbfbfb
+  font-size: 20px
+  font-weight: 700
+  text-align: center
+  span
+    margin-bottom: 17px
+  p
+    font-size: 14px
+    font-weight: 300
+
+  &-box
+    display: flex
+    justify-content: space-between
+
+  &-left
+    width: 309px
+    height: 341px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    img
+      margin-bottom: 32px
+
+  &-mid
+    width: 308px
+    height: 341px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    img
+      margin-bottom: 23px
+
+  &-right
+    width: 308px
+    height: 341px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    img
+      margin-bottom: 29px

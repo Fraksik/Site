@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  body {
+    background-color: white;
+    height: 100%;
+  }
+}
+/* шапка */
+.cheader {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5px;
+  border-bottom: 1px solid #999;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  .ckoss img {
+    opacity: 0.9;
+    height: 100px;
+    border: 1px solid white;
+    transition: all 1s;
+
+}
+  .ckoss img:hover {
+    border: 1px solid #42A0E2;
+    box-shadow: 0 2px 4px black;
+  }
+  .misl {
+    width: 500px;
+  }
+  .misl p {
+    font-size: 16px;
+    text-shadow: #42A0E2 0px 1px 7px;
+    font-style: oblique;
+  }
+  .cnavi {
+    width: 300px;
+    font-size: 16px;
+    text-shadow: #42A0E2 0px 3px 5px;
+    font-style: oblique;
+    letter-spacing: 5px;
+    li {
+      list-style-type: none;
+    }
+    li:hover a {
+      font-weight: bold;
+    }
+    a:link,a:visited {
+      text-decoration: none;
+      color: #3D5B63;
+    }
+    .clit {
+      margin-top: 10px;
+    }
+  }
+}
+.container {
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  .content {
+    flex: 1;
+    .cmain {
+      width: 800px;
+      margin: 0 auto;
+      font-size: 15px;
+      padding: 10px;
+    }
+    .cmain dt {
+      color: #B31B1B;
+      margin: 5px 0;
+    }
+    .cmain dd {
+      border: 1px dashed #42A0E2;
+      padding: 8px;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      margin-top: 5px;
+    }
+  }
+
+}
+/* подвал */
+.caddress {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 50px;
+  color: black;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #999;
+  a {
+    margin: 10px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    color: black;
+  }
+  a:link,a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    color: #3D5B63;
+    text-decoration: underline;
+  }
+}
+// Грин Транс
+.greenbody {
+  width: 1000px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  .logo_profi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .green_logo {
+      margin: 10px 5px 5px 0;
+    }
+    .green_logo img {
+      border: 1px solid white;
+      transition: all 1s;
+    }
+    .green_logo:hover img {
+      border: 1px solid lightgreen;
+      box-shadow: 0 2px 4px black;
+    }
+  }
+  .map {
+    width: 700px;
+    margin: 10px 5px 10px 40px;
+  }
+}
+/* Отчет Грин Транс */
+.profit {
+  width: 150px;
+  .year {
+    font-size: 16pt;
+    font-family: fantasy;
+    padding: 5px 0px 0px 0px;
+    text-shadow: grey 0px 1mm 5px;
+    .mess {
+      font-size: 20px;
+      font-style: italic;
+      text-shadow: green 0px 0px 5px;
+      display: none;
+    }
+    .mess li a:link,.mess li a:visited {
+      text-decoration: none;
+      color: black;
+    }
+    .mess li a:hover {
+      color: lightcoral;
+    }
+
+  }
+  .year:hover ol {
+    display: block;
+  }
+  li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+}
+/* Список литературы и проекты */
+.liter,.projects {
+  max-width: 1000px;
+  margin: 0 auto;
+  h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #d9dee1;
+    text-shadow: 0 2px 4px #212121;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  dt {
+    margin: 0px 0px 5px 150px;
+    text-shadow: #CDD9DB 1px 1px;
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    font-style: italic;
+    font-size: 12pt;
+  }
+  dd {
+    margin: 0px 0px 25px 200px;
+    color: black;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+}
+.projects {
+  dd a:link,dd a:visited {
+    text-decoration: none;
+    color: tan;
+    text-shadow: black 1px 1px 2px;
+  }
+  dd a:hover {
+    color: #6c6c6c;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,244 @@
+body {
+    background-color: #f8f8f8;
+    font-family: monaco, verdena, sans-serif;
+}
+
+/* шапка */
+.logo {
+    margin-left: 70px;
+	width: 90px;
+    height: 90px;
+    display: block;
+    margin-top: 20px;
+}
+.menu {
+    list-style: none;
+    margin-right: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    letter-spacing: 3px;
+}
+.menu li a {
+    color: #CC98E3;
+    font-family: "Times New Roman";
+    font-size: 25px;
+    text-shadow: black 1px 1px 1px;
+    text-decoration: none;
+    font-style: oblique;
+}
+.menu li:first-child a:hover,.menu li a:hover {
+	color: lightblue;
+}
+header img {
+    width: 90px;
+    border-radius: 90px;
+    border: none;
+}
+header {
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    background-color: beige;
+    background-image: url(bgi.jpg);
+    flex-wrap: wrap;
+}
+
+/* основная страница */
+.container {
+	width: 1000px;
+    margin: 0 auto;
+}
+.container h1 {
+    font-family: "Times New Roman";
+    font-style: oblique;
+    text-align: center;
+    font-size: 27px;
+    color: black;
+    text-shadow: chocolate 1px 0px 1px;
+}
+.container p {
+    color: #351E10;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: verdena;
+    font-style: oblique;
+    margin-bottom: 10px;
+}
+.main_img  {
+	width: 400px;
+    border: 1px solid #f8f8f8;
+    margin: 5px 15px 15px 5px;
+    float: left;
+}
+.main_img:hover {
+	border: 1px solid brown;
+}
+.deviz {
+    font-weight: 700;
+    color: darksalmon;
+    text-shadow: black 1px 1px 1px;
+}
+
+/* каталог */
+#top {
+    text-align: center;
+    text-shadow: #A4D5C1 2px 2px 5px;
+    font-size: 36px;
+}
+h1:hover .catalog {
+    display: block;
+}
+.cat ol a {
+    color: #A4D5C1;
+    font-size: 20px;
+    text-shadow: black 1px 1px 1px;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+.cat>ol li a:hover,.cat>a:hover,.cat>p>a:hover {
+    color: lightblue;
+}
+.list_toy a img {
+	border: 1px solid #f8f8f8;
+}
+.list_toy a img:hover {
+    border: 1px solid #000;
+}
+.cat a {
+    color: #A4D5C1;
+    font-size: 16px;
+    text-shadow: black 1px 1px 1px;
+    font-weight: 300;
+}
+.upup {
+    text-align: center;
+}
+.cat ol {
+    text-align: center;
+    list-style: none;
+}
+.list_toy {
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.t1,.t2,.t3,.t4,.t5 {
+    width: 200px;
+    height: 200px;
+}
+
+/* товары */
+.gmz {
+    background-color: #eaeaea;
+}
+.gmz h1 {
+    text-align: center;
+}
+.gmz_text {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16pt;
+}
+.gmz_text:first-letter {
+    font-family: Arial, cursive;
+    font-size: 2em;
+    color: brown;
+}
+.gmz_about {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.gmz_char {
+    list-style-image: url(catalog/avs.gif);
+    color: #0C0E33;
+    font-size: 14px;
+
+}
+.content a img {
+    border: 1px solid #000;
+    margin: 5px 30px 5px 10px;
+}
+.content li {
+	list-style-position: inside;
+}
+.content a img:hover {
+	border-color: #eaeaea;
+}
+.gmz_img_bt {
+	display: flex;
+    flex-direction: column;
+    float: left;
+}
+.gmz_img_bt button {
+	width: 130px;
+    margin: 5px 0 5px 20px;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.gmz_img_bt button:hover {
+	background-color: cadetblue;
+    color: chartreuse;
+}
+.gmz_img_bt button:active {
+    background-color: red;
+}
+.gmz_info h2 {
+	text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+/* контакты */
+.form {
+    color: brown;
+}
+.form input,
+textarea {
+    color: #3B3D41;
+    font-size: 13px;
+}
+.form input[type="text"],textarea {
+    text-transform: capitalize;
+}
+.form input[type="email"]:focus {
+	color: #D5F576;
+    background-color: black;
+}
+.map {
+	width: 100%;
+    height: 374px;
+}
+
+/* подвал */
+footer {
+    font-family: monospace;
+    font-size: 16px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: antiquewhite;
+    border-top: 1px solid black;
+    padding: 10px 20px 0 0;
+    clear: both;
+}
+
+
+
+
