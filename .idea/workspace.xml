@@ -1235,6 +1235,9 @@
       <replace>$red</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -1405,12 +1408,12 @@
       <workItem from="1524688002383" duration="27000" />
       <workItem from="1524688050605" duration="53438000" />
       <workItem from="1525070552382" duration="20306000" />
-      <workItem from="1525327790481" duration="9385000" />
+      <workItem from="1525327790481" duration="9716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254976000" />
+    <option name="totallyTimeSpent" value="255307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1431,7 +1434,7 @@
       <window_info anchor="right" id="Event Log" order="3" side_tool="true" weight="0.3295129" />
       <window_info id="File Transfer" order="2" sideWeight="0.51304346" side_tool="true" weight="0.1482808" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.25510204" />
-      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info id="Structure" order="4" sideWeight="0.50061804" side_tool="true" weight="0.24856733" />
       <window_info anchor="right" id="Terminal" order="5" side_tool="true" visible="true" weight="0.3295129" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
@@ -1473,6 +1476,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/projects/second_maket/shopping_cart.html">
