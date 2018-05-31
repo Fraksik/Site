@@ -6,12 +6,10 @@
   box-sizing: border-box;
   background-color: #ffffff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
-  height: 100px;
-  flex-wrap: wrap; }
+  height: 100px; }
   .header-left {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap; }
+    align-items: center; }
     .header-left form {
       display: flex;
       align-items: center;
@@ -1843,7 +1841,7 @@ html {
   box-sizing: border-box;
   background: #ffffff;
   padding: 12px 17px;
-  border-radius: 1p;
+  border-radius: 0;
   top: 26px;
   letter-spacing: 0.6px; }
   .badge h5 {
