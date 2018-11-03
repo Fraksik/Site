@@ -35,12 +35,6 @@ class Main
 				new \fraksik\services\renderers\TemplateRenderer()
 			);
 			$controller->run($actionName);
-
-		} else {
-			$controller = new EmptyController(
-				new \app\services\renderers\TemplateRenderer(), false
-			);
-			$controller->run($actionName);
 		}
 	}
 
@@ -53,11 +47,7 @@ class Main
 				unset($params['class']);
 				$reflection = new \ReflectionClass($class);
 				return $reflection->newInstanceArgs($params);
-			} else {
-				throw new \Exception("Не определен класс компонентта!");
 			}
-		} else {
-			throw new \Exception("Компонент {$key} не найден!");
 		}
 	}
 

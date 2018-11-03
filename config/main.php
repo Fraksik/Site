@@ -2,11 +2,11 @@
 return [
 	'rootDir' => __DIR__ . "/../",
 	'templatesDir' => __DIR__ . "/../views/",
-	'defaultController' => 'product',
-	'controllerNamespace' => "app\\controllers",
+	'defaultController' => 'index',
+	'controllerNamespace' => "fraksik\\controllers",
 	'components' => [
 		'db' => [
-			'class' => \app\services\Db::class,
+			'class' => \fraksik\services\Db::class,
 			'driver' => 'mysql',
 			'host' => 'phpOop',
 			'login' => 'php',
