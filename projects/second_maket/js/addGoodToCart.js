@@ -2,13 +2,12 @@
 
 class AddGoodToCart {
 
-    constructor(title, price, id, img, linkPath, thisProductCount = 1) {
+    constructor(title, price, id, img, linkPath) {
         this.title = title;
         this.price = price;
         this.id = id;
         this.img = img;
         this.linkPath = linkPath;
-        this.thisProductCount = thisProductCount;
     }
 
     run($box) {
@@ -16,7 +15,7 @@ class AddGoodToCart {
             class: 'cart-model',
             'data-id': this.id,
             'data-price': this.price,
-            'data-count': this.thisProductCount
+            'data-count': 1
         });
 
         let $goodImgBox = $('<a/>', {
@@ -66,7 +65,7 @@ class AddGoodToCart {
         });
 
         let $goodPrice = $('<span/>', {
-            text: `${this.thisProductCount} x $${this.price}`
+            text: `1 x $${this.price}`
         });
 
         let $goodRemoveBtn = $('<div/>', {

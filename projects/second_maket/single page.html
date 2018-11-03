@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
 	      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<script src="jquery/jquery.min.js"></script>
+	<script src="jquery/jquery-ui.min.js"></script>
+	<script src="js/addGoodToCart.js"></script>
+	<script src="js/cart.js"></script>
+	<script src="js/main.js"></script>
 	<title>Single page</title>
 </head>
 <body>
@@ -62,42 +67,8 @@
 							<summary class="cart"><img src="img/cart.png" alt="cart"></summary>
 							<div class="cart-triangle"></div>
 							<div class="cart-products-list">
-								<div class="cart-model">
-									<a href="#" class="cart-img"><img src="img/cart-model-2.png" alt="model"></a>
-									<div class="cart-text">
-										<a href="#">Rebox Zane</a>
-										<p><i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i
-													class="far fa-star x-star"><i
-													class="fas fa-star-half y-star"></i></i></p>
-										<span>1&nbsp;x $250</span>
-									</div>
-									<div class="cart-del"><a href="#">
-										<i class="fas fa-times-circle"></i></a>
-									</div>
-								</div>
-								<div class="cart-model">
-									<a href="#" class="cart-img"><img src="img/cart-model-1.png" alt="model"></a>
-									<div class="cart-text">
-										<a href="#">Rebox Zane</a>
-										<p><i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="far fa-star x-star"><i class="fas fa-star-half y-star"></i></i>
-										</p>
-										<span>1&nbsp;x $250</span>
-									</div>
-									<div class="cart-del"><a href="#">
-										<i class="fas fa-times-circle"></i></a>
-									</div>
-								</div>
-								<div class="cart-price">
-									<span>total</span><span>$500.00</span>
-								</div>
+								<div class="cart-products-add"></div>
+								<div class="cart-price"></div>
 								<a href="Checkout.html" class="cart-check">
 									<span>Checkout</span>
 								</a>
@@ -106,7 +77,7 @@
 								</a>
 							</div>
 						</details>
-						<div class="cart-products"><span>2</span></div>
+						<div class="cart-products"></div>
 					</div>
 					<div class="acc">
 						<details>
@@ -221,7 +192,7 @@
 			</a>
 		</div>
 		<section class="sp-product-info box">
-			<div class="sp-product-info-box">
+			<div class="sp-product-info-box" data-price="561" data-id="10" data-img="img/sp_slideer.jpg">
 				<div class="sp-product-info-top">
 					<h5>WOMEN COLLECTION</h5>
 					<div class="sp-info-line">
@@ -301,10 +272,10 @@
 						</form>
 					</div>
 				</div>
-				<a href="#" class="sp-cart-button">
+				<button class="sp-cart-button">
 					<img src="img/sb-cart.png" alt="cart">
 					<span>Add to&nbsp;Cart</span>
-				</a>
+				</button>
 			</div>
 		</section>
 		<section class="you-may-like-also box">
@@ -312,56 +283,56 @@
 				<h5>you may like also</h5>
 			</div>
 			<div class="you-may-bot">
-				<div class="model">
+				<div class="model" data-id="31" data-price="81">
 					<a href="single%20page.html" class="model-box">
 						<img src="img/layer-44.jpg" alt="model">
 						<h5>Mango People T-shirt</h5>
-						<p>$52.00</p>
+						<p>$81.00</p>
 					</a>
 					<div class="model-add">
-						<a href="#" class="push">
+						<button class="push">
 							<img src="img/cart2.png" alt="cart">
-							<p>Add to&nbsp;Cart</p>
-						</a>
+							<span>Add to&nbsp;Cart</span>
+						</button>
 					</div>
 				</div>
-				<div class="model">
+				<div class="model" data-id="32" data-price="82">
 					<a href="single%20page.html" class="model-box">
 						<img src="img/layer-45.jpg" alt="model">
 						<h5>Mango People T-shirt</h5>
-						<p>$52.00</p>
+						<p>$82.00</p>
 					</a>
 					<div class="model-add">
-						<a href="#" class="push">
+						<button class="push">
 							<img src="img/cart2.png" alt="cart">
-							<p>Add to&nbsp;Cart</p>
-						</a>
+							<span>Add to&nbsp;Cart</span>
+						</button>
 					</div>
 				</div>
-				<div class="model">
+				<div class="model" data-id="33" data-price="83">
 					<a href="single%20page.html" class="model-box">
 						<img src="img/layer-46.jpg" alt="model">
 						<h5>Mango People T-shirt</h5>
-						<p>$52.00</p>
+						<p>$83.00</p>
 					</a>
 					<div class="model-add">
-						<a href="#" class="push">
+						<button class="push">
 							<img src="img/cart2.png" alt="cart">
-							<p>Add to&nbsp;Cart</p>
-						</a>
+							<span>Add to&nbsp;Cart</span>
+						</button>
 					</div>
 				</div>
-				<div class="model">
+				<div class="model" data-id="34" data-price="84">
 					<a href="single%20page.html" class="model-box">
 						<img src="img/layer-47.jpg" alt="model">
 						<h5>Mango People T-shirt</h5>
-						<p>$52.00</p>
+						<p>$84.00</p>
 					</a>
 					<div class="model-add">
-						<a href="#" class="push">
+						<button class="push">
 							<img src="img/cart2.png" alt="cart">
-							<p>Add to&nbsp;Cart</p>
-						</a>
+							<span>Add to&nbsp;Cart</span>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -477,9 +448,7 @@
 		</div>
 	</footer>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
         integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>

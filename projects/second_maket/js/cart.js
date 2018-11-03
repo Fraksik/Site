@@ -73,6 +73,7 @@ class Cart {
     }
 
     removeProduct(productId) {
+
         for (let item of this.cartProducts) {
             if (item.id === productId) {
                 let productIndex = this.cartProducts.indexOf(item);
@@ -91,40 +92,36 @@ class Cart {
 
         let productInCart = [];
 
-        createNew: for (let k = 0; k < this.cartProducts.length; k++) {
+        for (let k = 0; k < this.cartProducts.length; k++) {
 
             let item = this.cartProducts[k];
-            let createNewProduct = new AddGoodToCart(item.title, item.price, item.id, item.img, item.link);
-            let newProduct = {
-                title: item.title,
-                price: item.price,
-                id: item.id,
-                img: item.img,
-                link: item.link,
-                count: 1
-            };
-            createNewProduct.run(this.$cartBox);
-            productInCart.push(newProduct);
+            let itemId = item.id;
+            let findProductInCart = $(`[data-id = ${item.id}]`);
 
-            // TODO: надо доработать
-            // if (productInCart.length === 0) {
-            //     productInCart.push(newProduct);
-            // } else {
-            //     for (let k = 0; k < productInCart.length; k++) {
-            //         let element = productInCart[k];
-            //         console.log(element.id);
-            //         if (element.id === item.id) {
-            //             console.log(element);
-            //             continue createNew;
-            //         } else {
-            //             productInCart.push(newProduct);
-            //             continue createNew;
-            //         }
-            //     }
-            // }
 
+            let createNewProduct = new AddGoodToCart(item.title, item.price, itemId, item.img, item.link);
+
+            if (productInCart.length === 0) {
+                createNewProduct.run(this.$cartBox);
+                productInCart.push(itemId);
+            } else {
+                if (productInCart.indexOf(itemId) !== -1) {
+                    let $elementPrice = findProductInCart[0].dataset.price;
+                    let $elementCount = parseInt(findProductInCart[0].dataset.count);
+
+                    findProductInCart[0].dataset.count = $elementCount + 1;
+                    findProductInCart[0]
+                        .children[0]
+                        .children[1]
+                        .children[2]
+                        .innerHTML = `${$elementCount + 1} x $${$elementPrice}`;
+
+                } else {
+                    createNewProduct.run(this.$cartBox);
+                    productInCart.push(itemId);
+                }
+            }
         }
-        console.log(productInCart);
 
         if (this.cartProducts.length > 9) {
             this.$countBox.children('span').css('left', '3px')
