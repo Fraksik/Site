@@ -1,6 +1,6 @@
 <?php
 
-namespace app\services;
+namespace fraksik\services;
 
 class Request
 {
@@ -25,8 +25,6 @@ class Request
 			$this->actionName = $matches['action'][0];
 			$this->params['get'] = $_GET;
 			$this->params['post'] = $_POST;
-		}else{
-			throw new \Exception("Неправильный запрос");
 		}
 	}
 

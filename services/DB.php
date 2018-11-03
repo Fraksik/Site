@@ -1,6 +1,6 @@
 <?php
 
-namespace app\services;
+namespace fraksik\services;
 
 class DB
 {

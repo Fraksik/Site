@@ -15,13 +15,13 @@ return [
 			'charset' => 'utf8'
 		],
 		'request' => [
-			'class' => \app\services\Request::class
+			'class' => \fraksik\services\Request::class
 		],
 		'renderer' => [
-			'class' => \app\services\renderers\TemplateRenderer::class
+			'class' => \fraksik\services\renderers\TemplateRenderer::class
 		],
 		'session' => [
-			'class' => \app\services\Session::class
+			'class' => \fraksik\services\Session::class
 		]
 	]
 
