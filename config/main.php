@@ -8,10 +8,10 @@ return [
 		'db' => [
 			'class' => \fraksik\services\Db::class,
 			'driver' => 'mysql',
-			'host' => 'phpOop',
-			'login' => 'php',
-			'password' => '',
-			'database' => 'phpOop',
+			'host' => '81.90.180.80:3306',
+			'login' => 'fraksik',
+			'password' => 'Rainbow85',
+			'database' => 'my_site',
 			'charset' => 'utf8'
 		],
 		'request' => [
