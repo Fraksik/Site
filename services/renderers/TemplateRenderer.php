@@ -1,16 +1,16 @@
 <?php
 
-namespace app\services\renderers;
+namespace fraksik\services\renderers;
 
-use app\base\App;
+use fraksik\base\Main;
 
-class TemplateRenderer implements IRenderer
+class TemplateRenderer
 {
 	public function render($template, $params = [])
     {
         ob_start();
         extract($params);
-        include App::call()->config['templatesDir'] . $template . ".php";
+        include Main::call()->config['templatesDir'] . $template . ".php";
         return ob_get_clean();
     }
 }

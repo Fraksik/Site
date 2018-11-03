@@ -1,6 +1,6 @@
 <?php
 
-namespace app\base;
+namespace fraksik\base;
 
 class Storage
 {

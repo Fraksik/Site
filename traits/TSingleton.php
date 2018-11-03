@@ -1,5 +1,5 @@
 <?php
-namespace app\traits;
+namespace fraksik\traits;
 
 
 trait TSingleton

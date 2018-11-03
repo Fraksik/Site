@@ -7,5 +7,10 @@
             "email": "fraks@list.ru"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "fraksik\\": ""
+      }
+    }
 }

@@ -10,6 +10,9 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="4d30536d-0489-49b0-b730-59a9b143d9e2" name="mySiteLocal" url="http://mySite:8888/">
+        <fileTransfer port="0" accessType="LOCAL" />
+      </webServer>
     </option>
   </component>
 </project>

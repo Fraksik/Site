@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="My site">
+  <component name="PublishConfigData" serverName="mySiteLocal">
     <serverData>
       <paths name="My site">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="mySiteLocal">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/public" web="/" />
           </mappings>
         </serverdata>
       </paths>
