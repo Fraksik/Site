@@ -1,0 +1,11 @@
+{
+    "name": "fraks/my_site",
+    "description": "my_site",
+    "authors": [
+        {
+            "name": "Fraksik",
+            "email": "fraks@list.ru"
+        }
+    ],
+    "require": {}
+}
