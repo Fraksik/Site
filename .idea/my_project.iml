@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" packagePrefix="fraksik\" />
       <excludeFolder url="file://$MODULE_DIR$/../my_project/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/../my_project/temp" />
       <excludeFolder url="file://$MODULE_DIR$/../my_project/tmp" />
