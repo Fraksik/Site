@@ -22,6 +22,9 @@ return [
 		],
 		'session' => [
 			'class' => \fraksik\services\Session::class
+		],
+		'historyDB' => [
+			'class' => \fraksik\models\repositories\HistoryRepository::class
 		]
 	]
 
