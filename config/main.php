@@ -25,6 +25,9 @@ return [
 		],
 		'historyDB' => [
 			'class' => \fraksik\models\repositories\HistoryRepository::class
+		],
+		'literDB' => [
+			'class' => \fraksik\models\repositories\LiterRepository::class
 		]
 	]
 

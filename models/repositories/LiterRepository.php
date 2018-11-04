@@ -2,17 +2,17 @@
 
 namespace fraksik\models\repositories;
 
-use fraksik\models\History;
+use fraksik\models\Liter;
 
-class HistoryRepository extends Repository
+class LiterRepository extends Repository
 {
 	public function getTableName()
 	{
-		return 'history';
+		return 'liter';
 	}
 
 	public function getEntityClass()
 	{
-		return History::class;
+		return Liter::class;
 	}
 }

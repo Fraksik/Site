@@ -7,7 +7,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Начало положено</title>
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 	<div class="container">
@@ -20,10 +19,10 @@
 			</div>
 			<nav class="cnavi">
 				<ol>
-					<li><a href="index.html">На главную</a></li>
-					<li><a href="greentrans/greentrans.html">Грин Транс</a></li>
-					<li><a href="projects/projects.html">Проекты</a></li>
-					<li class="clit"><a href="liter/liter.html">Список литературы</a></li>
+					<li><a href="index">На главную</a></li>
+					<li><a href="greentrans">Грин Транс</a></li>
+					<li><a href="projects">Проекты</a></li>
+					<li class="clit"><a href="liter">Список литературы</a></li>
 				</ol>
 			</nav>
 		</header>

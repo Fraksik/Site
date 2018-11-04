@@ -45,10 +45,13 @@ abstract class Repository
 		return $this->db->queryOneAsObj($sql, $this->getEntityClass(), [':id' => $id]);
 	}
 
-	public function getAll()
+	public function getAll($reverse = false)
 	{
 		$table = $this->getTableName();
 		$sql = "SELECT * FROM {$table}";
+		if ($reverse) {
+			$sql = "SELECT * FROM {$table} ORDER BY id DESC";
+		}
 		return $this->db->queryAllAsObj($sql, $this->getEntityClass(), []);
 	}
 
