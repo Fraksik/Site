@@ -2,6 +2,7 @@
 
 namespace fraksik\base;
 
+use fraksik\controllers\IndexController;
 use fraksik\traits\TSingleton;
 
 class Main
@@ -34,8 +35,11 @@ class Main
 			$controller = new $controllerClass(
 				new \fraksik\services\renderers\TemplateRenderer()
 			);
-			$controller->run($actionName);
+
+		} else {
+			$controller = new IndexController(new \fraksik\services\renderers\TemplateRenderer());
 		}
+		$controller->run($actionName);
 	}
 
 	public function createComponent($key)
